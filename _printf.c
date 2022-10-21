@@ -8,8 +8,6 @@
  * Description: prints a string
  *
  * @format: str to print
- * @...: variadic parameters (unknown)
- *
  * Return: no of characters
  */
 

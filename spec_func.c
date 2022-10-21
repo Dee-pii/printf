@@ -12,7 +12,7 @@ int (*spec_func(const char *format))(va_list)
 {
 	int x;
 
-	fun_p my_arr[] = {
+	fun_p arr[] = {
 		{"c", print_ch},
 		{"s", print_st},
 		{"%", print_cn},
@@ -20,11 +20,11 @@ int (*spec_func(const char *format))(va_list)
 		{"d", print_dc},
 		{NULL, NULL}};
 
-	for (x = 0; my_arr[x].p != NULL; x++)
+	for (x = 0; arr[x].p != NULL; x++)
 	{
-		if (*(my_arr[x].p) == *format)
+		if (*(arr[x].p) == *format)
 		{
-			return (my_arr[x].f);
+			return (arr[x].f);
 		}
 	}
 
