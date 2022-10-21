@@ -3,14 +3,14 @@
 
 /**
  * struct func - struct for specifier to printer
- * @t: character to compare
+ * @p: character to compare
  * @f: function to handle printing
  */
-typedef struct func
+typedef struct fun
 {
-	char *t;
+	char *p;
 	int (*f)(va_list);
-} func_t;
+} fun_p;
 
 #include <stdlib.h>
 #include <stdio.h>
